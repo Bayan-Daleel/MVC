@@ -22,6 +22,10 @@ class App {
       unset($url[0],$url[1]);
       $this->params = array_values($url);
     }
+    else{
+      $this->controller = 'homecontroller';
+      $this->method = 'index';
+    }
     }
 
     private function render(){
@@ -31,11 +35,14 @@ class App {
      if(class_exists($controller)){
 
       $controller = new $controller();
-      
+
      if(method_exists($controller, $this->method)){
          call_user_func_array([$controller,$this->method],$this->params);
              }
+
+
              else{  
+
               echo 'not exist method';
 
              }
