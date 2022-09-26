@@ -11,8 +11,7 @@ class User extends Model{
     }
 
     public function GetUser($email,$password){
-        $data= Model::db()->rows("SELECT * FROM users where
-       `email` = ? and `password` = ? ",[$email,$password]);
+        $data= Model::db()->rows("SELECT * FROM users where `email` = ? && `password` = ? ",[$email,$password]);
         return $data;
     }
 }

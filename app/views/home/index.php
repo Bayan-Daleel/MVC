@@ -8,5 +8,9 @@
 </head>
 <body>
     <h1>hello</h1>
+    <?php
+    foreach ($data as $data1) {
+    }
+    ?>
 </body>
 </html>
