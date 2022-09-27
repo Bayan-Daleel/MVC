@@ -14,8 +14,9 @@ define("USERNAME","root");
 define("PASSWORD","");
 define("DATABASE","programmer100");
 define("DATABASE_TYPE","mysql");
-define("DOMAIN_NAME","http://localhost/");
+define("DOMAIN_NAME","http://localhost");
 
+define('CSS_PATH',DOMAIN_NAME.'/');
 require_once ("../vendor/autoload.php");
 
 

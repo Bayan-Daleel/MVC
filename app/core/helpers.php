@@ -7,4 +7,8 @@ class Helpers{
        header('Location: DOMAIN_NAME'.$path); 
     }
 
+
+    public static function assest($path){
+        echo ROOT ."/public/".$path;
+    }
 }
